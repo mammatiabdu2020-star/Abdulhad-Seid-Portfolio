@@ -1,0 +1,82 @@
+/*--------------------------------------------------------------
+# SOLID ORANGE THEME (white text)
+# Paste this at the very END of main.css. Later rules win,
+# so nothing above needs to be edited.
+--------------------------------------------------------------*/
+
+/* Global colors */
+:root {
+  --background-color: #ff8c1a; /* solid orange everywhere */
+  --default-color: #ffffff; /* white text */
+  --heading-color: #ffffff;
+  --accent-color: #ffffff; /* links, borders, buttons */
+  --surface-color: #ffa040; /* cards / boxes, slightly lighter orange */
+  --contrast-color: #ff8c1a; /* text on top of white accent areas */
+}
+
+/* Navigation */
+:root {
+  --nav-color: #ffffff;
+  --nav-hover-color: #1b2430; /* dark so the active link stands out */
+  --nav-mobile-background-color: #e67600;
+  --nav-dropdown-background-color: #e67600;
+  --nav-dropdown-color: #ffffff;
+  --nav-dropdown-hover-color: #1b2430;
+}
+
+/* Color presets */
+.light-background {
+  --background-color: #ff9d3a;
+  --surface-color: #ffb061;
+}
+.dark-background {
+  --background-color: #ff8c1a;
+  --default-color: #ffffff;
+  --heading-color: #ffffff;
+  --surface-color: #ffa040;
+  --contrast-color: #ff8c1a;
+}
+
+/* Header turns solid orange once the page is scrolled */
+.scrolled .header {
+  --background-color: rgba(255, 140, 26, 0.97);
+}
+
+/* Portfolio hover label: white-on-white fix */
+.portfolio .portfolio-content .portfolio-info h4 {
+  color: var(--contrast-color);
+}
+
+/*--------------------------------------------------------------
+# Bootstrap pieces used by your pages (cards, buttons, icons)
+--------------------------------------------------------------*/
+.card {
+  --bs-card-bg: var(--surface-color);
+  --bs-card-color: var(--default-color);
+  --bs-card-cap-bg: var(--surface-color);
+  --bs-card-border-color: rgba(255, 255, 255, 0.35);
+}
+.text-primary {
+  color: #ffffff !important;
+}
+.btn-primary {
+  --bs-btn-bg: #ffffff;
+  --bs-btn-border-color: #ffffff;
+  --bs-btn-color: #ff8c1a;
+  --bs-btn-hover-bg: #ffe9d1;
+  --bs-btn-hover-border-color: #ffe9d1;
+  --bs-btn-hover-color: #ff8c1a;
+  --bs-btn-active-bg: #ffe9d1;
+  --bs-btn-active-border-color: #ffe9d1;
+  --bs-btn-active-color: #ff8c1a;
+}
+.btn-outline-primary {
+  --bs-btn-color: #ffffff;
+  --bs-btn-border-color: #ffffff;
+  --bs-btn-hover-bg: #ffffff;
+  --bs-btn-hover-border-color: #ffffff;
+  --bs-btn-hover-color: #ff8c1a;
+  --bs-btn-active-bg: #ffffff;
+  --bs-btn-active-border-color: #ffffff;
+  --bs-btn-active-color: #ff8c1a;
+}
